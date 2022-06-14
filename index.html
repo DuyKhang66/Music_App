@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href='assets/iconshot.ico' />
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Music_App</title>
+</head>
+<body class="banner">
+<div class="loader ">
+    <img src="assets/loading.gif">
+    <div class="textloading">Chờ Xíu, Đang Tải</div>
+</div>
+</div>
+<header id="app">
+    <div class="menu_side">
+        <span class="ndk_music" >N</span>
+        <span class="ndk_music" >D</span>
+        <span class="ndk_music" >K</span>
+        <span class="ndk_music" >_</span>
+        <span class="ndk_music" >M</span>
+        <span class="ndk_music" >U</span>
+        <span class="ndk_music" >S</span>
+        <span class="ndk_music" >I</span>
+        <span class="ndk_music" >C</span>
+        <i class=" ndk_music bi bi-activity"></i>
+        <i class="ndk_music bi bi-music-note-list"></i>
+        <div class="playlist">
+            <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Danh Sách Phát</h4>
+            <h4><span></span><i class="bi bi-music-note-beamed"></i> Những Bài Hát Đã Nghe</h4>
+            <h4><span></span><i class="bi bi-music-note-beamed"></i> Khuyến khích</h4>
+        </div>
+        <!-- Playlist -->
+        <div class="menu_song" id="style-1">
+           
+        </div>
+    </div>
+
+
+    <div class="song_side">
+        <nav>
+            <ul>
+                <li>THÊM<span></span></li>
+                <li>Thư VIện</li>
+                <li>Yêu Thích></li>
+            </ul>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search Music ...">
+                <div id="search_result">
+                    <!-- <a href="#" class="card">
+                        <img src="assets/img/song1.jpg" alt="">
+                        <div class="content_search">
+                            Sky Hight
+                            <div class="subtitle">Elektronamia</div>
+                        </div>
+                    </a> -->
+                </div>
+            </div>
+            <div class="user">
+                <img src="assets/user.png" alt="User" title="Duy Khang">
+                <p class="name_user">
+                    <span span_user>N</span>
+                    <span span_user>D</span>
+                    <span span_user>K</span>
+                </p>
+            </div>
+            <div class="toggle"><i class="bi_light bi-moon"></i>Chế độ</div>
+            
+        </nav>
+        <div class="content">
+            <span>A</span>
+            <span>L</span>
+            <span>A</span>
+            <span>N</span>
+            <span>-</span>
+            <span>W</span>
+            <span>A</span>
+            <span>L</span>
+            <span>K</span>
+            <span>E</span>
+            <span>R</span>
+            <p>
+                Alan Olav Walker (24/8/1997), thường được biết đến với nghệ danh Alan Walker là một nam DJ và nhà sản xuất thu âm người Na Uy gốc Anh. 
+                <br>
+                Hiện tại kênh Youtube của anh có 41,3 triệu người đăng ký và 11.095.289.472 tỷ lượt xem, anh là nhạc sĩ EDM có lượt subscribe đứng thứ 2 trong số các nhạc sĩ EDM trên thế giới
+            </p>
+            <div class="buttons">
+                <button>MỞ</button>
+                <button>THEO DÕI</button>
+            </div>
+        </div>
+   
+        <div class="player">
+        <!-- Dashboard -->
+            <div class="dashboard">
+                <!-- Header -->
+                <header>
+                    <h4>Bài Hát Đang Phát:</h4>
+                    <h2>String 57th & 9th</h2>
+                </header>
+                <!-- CD -->
+                <div class="cd">
+                <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                </div>
+                </div>
+
+                <!-- Control -->
+                <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fas fa-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+                </div>
+
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+                <audio id="audio" src=""></audio>
+            </div>
+        </div>
+
+        <div class="master_play">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <div class="wave_1">
+                <div class="wave2"></div>
+                <div class="wave2"></div>
+                <div class="wave2"></div>
+            </div>
+        </div>
+</header>
+    <script src="assets/app.js"></script>
+</body>
+</html>
